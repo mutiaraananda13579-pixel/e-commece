@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Terima Kasih</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #38bdf8, #46b7eb, #ec4899);
+      background-size: 300% 300%;
+      animation: gradientMove 10s ease infinite;
+    }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .fade-in {
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .glow {
+      text-shadow: 
+        0 0 10px rgba(255,255,255,0.6),
+        0 0 20px rgba(236,72,153,0.6),
+        0 0 30px rgba(59,130,246,0.6);
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center h-screen text-center px-6">
+  <div class="fade-in bg-white rounded-3xl shadow-2xl p-10 max-w-lg text-gray-800">
+    <h1 class="text-4xl font-extrabold mb-4 glow">💦 Terima Kasih 🙏</h1>
+    
+    <p class="text-lg mb-6 leading-relaxed">
+      Pesanmu sudah berhasil terkirim.  
+      Kami sangat menghargai setiap waktu dan kata yang kamu sampaikan.
+    </p>
+
+    <p class="italic mb-6 text-pink-600">
+      "Jangan tunggu sempurna untuk melangkah.  
+      Justru dengan melangkah, kamu akan menjadi lebih sempurna."
+    </p>
+
+    <p class="text-sm opacity-80 mb-8 text-blue-600">
+      Hidup ini bukan tentang siapa yang paling cepat, tapi siapa yang tidak berhenti.  
+      Jadi, tetaplah bergerak meski perlahan.
+    </p>
+
+    <a href="PortofolioBaru.html" 
+       class="inline-block bg-gradient-to-r from-pink-500 via-blue-400 to-sky-500 hover:from-pink-600 hover:via-blue-600 hover:to-sky-700 px-8 py-3 rounded-full shadow-xl text-white font-semibold transition transform hover:scale-105 active:scale-95">
+      ⬅️ Kembali ke Beranda
+    </a>
+
+    <p id="countdown" class="text-xs text-gray-500 mt-4"></p>
+  </div>
+
+  <script>
+    let timeLeft = 10;
+    const countdownEl = document.getElementById("countdown");
+    countdownEl.textContent = `Anda akan diarahkan otomatis dalam ${timeLeft} detik...`;
+    const timer = setInterval(() => {
+      timeLeft--;
+      countdownEl.textContent = `Anda akan diarahkan otomatis dalam ${timeLeft} detik...`;
+      if (timeLeft <= 0) {
+        clearInterval(timer);
+        window.location.href = "PortofolioBaru.html";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
