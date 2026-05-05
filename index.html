@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Portofolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a2e0e9c6d3.js" crossorigin="anonymous"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .hamburger-active > span:nth-child(1) {
+      transform-origin: top left;
+      transform: rotate(45deg);
+    }
+    .hamburger-active > span:nth-child(2) {
+      transform: scale(0);
+    }
+    .hamburger-active > span:nth-child(3) {
+      transform-origin: bottom left;
+      transform: rotate(-45deg);
+    }
+  </style>
+</head>
+<body class="bg-sky-300">
+  <header class="flex justify-between items-center bg-white/50 backdrop-blur py-6 px-8 rounded shadow m-10 sticky top-0 z-50">
+    <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-full bg-pink shadow-lg overflow-hidden">
+        <img src="galery.jpg" class="w-32 transition-transform duration-300 hover:rotate-6 hover:scale-110" />
+      </div>
+      <h1 class="text-xl font-semibold text-gray-800">Mutiara Ananda</h1>
+    </div>
+    <div class="flex items-center px-4 lg:hidden">
+      <button id="hamburger" type="button" class="relative z-20">
+        <span class="w-[30px] h-[2px] my-2 block bg-slate-900 transition duration-300 ease-in-out"></span>
+        <span class="w-[30px] h-[2px] my-2 block bg-slate-900 transition duration-300 ease-in-out"></span>
+        <span class="w-[30px] h-[2px] my-2 block bg-slate-900 transition duration-300 ease-in-out"></span>
+      </button>
+    </div>
+    <nav id="nav-menu"
+      class="absolute top-full right-6 bg-white shadow-lg rounded-lg w-48
+             transform scale-0 opacity-0 transition duration-300 ease-in-out origin-top-right
+             lg:static lg:block lg:bg-transparent lg:shadow-none lg:w-auto lg:transform-none lg:opacity-100 lg:scale-100">
+        <ul class="block lg:flex lg:space-x-6">
+        <li><a href="#about" class="block px-4 py-2 text-slate-700 hover:text-teal-500">About me</a></li>
+        <li><a href="#skills" class="block px-4 py-2 text-slate-700 hover:text-teal-500">Skills</a></li>
+        <li><a href="#gallery" class="block px-4 py-2 text-slate-700 hover:text-teal-500">Project</a></li>
+        <li><a href="#pendidikan" class="block px-4 py-2 text-slate-700 hover:text-teal-500">pendidikan</a></li>
+        <li><a href="#contact" class="block px-4 py-2 text-slate-700 hover:text-teal-500">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+<!--about section star-->
+<section id="about" 
+  class="flex flex-col-reverse lg:flex-row items-center justify-around 
+         px-4 sm:px-6 lg:px-10 pt-20 pb-16
+         bg-white/50 backdrop-blur m-4 sm:m-6 lg:m-10 rounded-2xl shadow-lg relative">
+
+    <div class="w-full max-w-xl lg:max-w-lg mx-auto lg:mx-0 text-left mb-6 lg:mb-0">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
+      Hi, I'm Mutiara Ananda
+    </h2>
+    <p class="text-gray-800 mb-3 leading-relaxed text-justify">
+      Saya adalah lulusan SMK jurusan Rekayasa Perangkat Lunak yang memiliki ketertarikan di bidang teknologi dan pengolahan data. Selama masa pendidikan, saya telah mempelajari berbagai dasar seperti pembuatan website, pengelolaan data, serta penggunaan perangkat lunak pendukung lainnya.
+    </p>
+    <p class="text-gray-800 mb-3 leading-relaxed text-justify">
+      Saya memiliki kemampuan untuk bekerja secara mandiri maupun dalam tim, serta terbiasa menyelesaikan tugas dengan teliti dan tepat waktu. Selain itu, saya juga memiliki semangat belajar yang tinggi dan mampu beradaptasi dengan lingkungan serta hal baru.
+    </p>
+    <p class="text-gray-800 mb-4 leading-relaxed text-justify">
+      Melalui portfolio ini, saya ingin memperkenalkan diri sekaligus menunjukkan kesiapan saya untuk memasuki dunia kerja dan memberikan kontribusi terbaik di bidang yang saya tekuni.
+    </p>
+    <a 
+      href="#contact"
+      class="inline-block bg-blue-600 text-white px-6 py-3 mt-3 rounded-lg shadow 
+             hover:bg-blue-700 active:scale-95 transition">
+      📞 Contact Me
+    </a>
+  </div>
+
+  <div class="w-full lg:w-1/2 mb-8 lg:mb-0 px-4 flex justify-center">
+    <div class="relative">
+      <span
+        class="absolute inset-0 flex items-center justify-center z-0 
+               w-[280px] sm:w-[340px] md:w-[400px] lg:w-[460px] mx-auto">
+        <svg viewBox="0 0 200 200" class="w-full h-full">
+          <path fill="#38bdf8" 
+            d="M40.4,-57.8C54.6,-53.7,70,-46.4,74.9,-34.5C79.7,-22.7,74,-6.4,65.2,4.8C56.4,16,44.5,22.1,36.9,33.4C29.3,44.6,26,61,16.8,69.2C7.6,77.3,-7.6,77.3,-19,71.1C-30.4,64.8,-38.2,52.3,-47.3,41.2C-56.4,30.2,-66.8,20.7,-74.1,7.2C-81.3,-6.2,-85.3,-23.5,-78.7,-35C-72,-46.6,-54.7,-52.3,-39.8,-56.1C-24.9,-59.9,-12.4,-61.6,0.3,-62.1C13.1,-62.6,26.2,-61.9,40.4,-57.8Z" 
+            transform="translate(100 100)" />
+        </svg>
+      </span>
+      <img src="mutiara.png" alt="Foto saya" 
+        class="relative z-10 mx-auto w-[180px] sm:w-[240px] md:w-[280px] lg:w-[320px] rounded-full object-cover shadow-lg" />
+    </div>
+  </div>
+</section>
+<!---about section end-->
+
+<!--galery section start-->
+<section id="gallery" class="pt-20 pb-16 bg-white/50 backdrop-blur 
+       m-4 sm:m-6 lg:m-10 rounded-2xl shadow-lg">
+  <div class="container mx-auto px-6 sm:px-10">
+    <div class="text-center mb-10">
+      <h2 class="text-4xl font-bold">Project</h2>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden p-4 transform transition duration-500 hover:scale-105 hover:shadow-2xl animate-fadeIn">
+        <img src="produk.png" alt="Foto 1" 
+            class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-lg">
+        <p class="text-sm text-gray-600 text-left mt-2">
+         Tampilan produk yang pernah saya kembangkan sebagai bagian dari project yang telah saya kerjakan selama proses pembelajaran.
+        </p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden p-4 transform transition duration-500 hover:scale-105 hover:shadow-2xl animate-fadeIn delay-200">
+        <img src="perpus-admin.png" alt="Foto 2" 
+            class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-lg">
+        <p class="text-sm text-gray-600 text-left mt-2">
+         Dashboard admin perpustakaan yang dibuat untuk mempermudah pengelolaan data buku, anggota, dan proses peminjaman.
+        </p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden p-4 transform transition duration-500 hover:scale-105 hover:shadow-2xl animate-fadeIn delay-400">
+        <img src="e-commerce.png" alt="Foto 3" 
+            class="w-full h-64 sm:h-72 md:h-80 object-contain bg-gray-100 rounded-lg">
+        <p class="text-sm text-gray-600 text-left mt-2">
+          Tampilan dashboard penjualan pada sistem e-commerce yang saya kembangkan untuk memantau transaksi, data produk, dan aktivitas penjualan.
+        </p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden p-4 transform transition duration-500 hover:scale-105 hover:shadow-2xl animate-fadeIn delay-600">
+        <img src="login-perpus.png" alt="Foto 4" 
+            class="w-full h-64 sm:h-72 md:h-80 object-contain bg-gray-100 rounded-lg">
+        <p class="text-sm text-gray-600 text-left mt-2">
+          Tampilan halaman login pada sistem perpustakaan yang saya kembangkan sebagai akses masuk pengguna ke dalam sistem.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--galery section end-->
+
+<!-- Skills Section star -->
+<section id="skills" class="pt-20 pb-16 bg-slate-700 
+       m-4 sm:m-6 lg:m-10 rounded-2xl shadow-lg">
+  <div class="container mx-auto px-6 sm:px-10">
+    <div class="text-center mb-12">
+      <h4 class="font-bold text-lg text-blue-500 mb-2">Skills</h4>
+      <h2 class="font-bold text-white text-3xl sm:text-4xl lg:text-5xl">
+        Yang Pernah Dipelajari
+      </h2>
+    </div>
+    <div class="flex flex-wrap items-center justify-center gap-6">
+       <a href="#" class="max-w-[100px] opacity-60 transition duration-500 hover:opacity-100">
+        <img src="dist/img svg/react js.png" alt="html" />
+      </a>
+      <a href="#" class="max-w-[100px] opacity-60 transition duration-500 hover:opacity-100">
+        <img src="dist/img svg/laravel.svg" alt="laravel" />
+      </a>
+      <a href="#" class="max-w-[100px] opacity-60 transition duration-500 hover:opacity-100">
+        <img src="dist/img svg/w3_css-official.svg" alt="css" />
+      </a>
+      <a href="https://tailwindcss.com" target="_blank"
+         class="max-w-[100px] opacity-60 transition duration-300 
+                hover:opacity-100 hover:scale-110
+                focus:opacity-100 focus:scale-110
+                active:opacity-100 active:scale-110">
+        <img src="dist/img svg/Tailwind_CSS_Logo.svg.png" alt="tailwind" />
+      </a>
+    </div>
+  </div>
+</section>
+<!--skill end-->
+
+<!-- Section Pendidikan -->
+<section id="pendidikan" class="pt-20 pb-16 bg-white/50 backdrop-blur m-4 sm:m-6 lg:m-10 rounded-2xl shadow-lg">
+  <div class="container mx-auto px-6 sm:px-10">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl font-bold text-gray-800">Pendidikan</h2>
+      <p class="mt-2 text-gray-600">Riwayat pendidikan dari SD hingga SMK</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 motion-safe:animate-slideUp">
+        <p><span class="font-bold">Sekolah Dasar Negeri</span> : (2014 - 2020)</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 motion-safe:animate-slideUp">
+        <p><span class="font-bold">Madrasah Tsanawiyah</span> : (2020 - 2023)</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 motion-safe:animate-slideUp">
+        <p><span class="font-bold">Sekolah Menengah Kejuruan</span> : (2023 - 2026)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section Pendidikan -->
+
+<!-- Contact Section -->
+<section id="contact" class="flex flex-1 items-center justify-center px-6 sm:px-16 py-20 bg-white/50 backdrop-blur m-4 sm:m-10 rounded-2xl shadow-lg">
+  <div class="max-w-md w-full text-center">
+    <h2 class="text-2xl sm:text-3xl font-black mb-10">Contact Me</h2>
+
+    <form id="contactForm" action="https://formspree.io/f/xldwalbo" method="POST">
+      <input 
+        class="w-full mb-4 p-3 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        type="text" name="Nama" placeholder="Nama Lengkap" required
+      />
+
+      <input 
+        class="w-full mb-4 p-3 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+        type="email" name="Email" placeholder="Email" required
+      />
+
+      <textarea 
+        rows="4" name="Pesan"
+        class="w-full mb-4 p-3 border border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-purple-500"
+        placeholder="Tuliskan Pesanmu..." required
+      ></textarea>
+
+      <button type="submit"
+        class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 active:scale-95 transition">
+        Kirim Pesan
+      </button>
+    </form>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      window.location.href = "Thankyou.html";
+    } else {
+      alert("Pesan gagal dikirim. Coba lagi ya.");
+    }
+  });
+</script>
+
+  <!-- Footer Contact -->
+<section class="flex justify-center px-6 sm:px-16 py-10 
+                bg-slate-700 text-white m-4 sm:m-10 
+                rounded-2xl shadow-lg">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl">
+
+    <div class="flex items-center justify-center sm:justify-between 
+            bg-slate-800 rounded-xl p-4 shadow-md flex-wrap gap-2">
+      <h2 class="text-lg font-semibold text-white">📧 Email</h2>
+      <a href="mailto:mutiarananda13579@gmail.com" 
+      class="text-sky-400 hover:text-purple-400 font-medium break-all">
+        mutiarananda13579@gmail.com
+      </a>
+    </div>
+    <div class="flex items-center justify-between bg-slate-800 rounded-xl p-4 shadow-md">
+      <h2 class="text-lg font-semibold">📞 Telepon</h2>
+      <a href="tel:083139591080" 
+         class="text-sky-400 hover:text-purple-400 font-medium">
+        0831-3959-1080
+      </a>
+    </div>
+  </div>
+</section>
+
+  <script>
+    // Navbar fixed saat scroll
+    window.onscroll = function () {
+      const header = document.querySelector("header");
+      const fixedNav = header.offsetTop;
+
+      if (window.pageYOffset > fixedNav) {
+        header.classList.add("navbar-fixed");
+      } else {
+        header.classList.remove("navbar-fixed");
+      }
+    };
+
+    // Toggle hamburger
+    const hamburger = document.querySelector("#hamburger");
+    const navMenu = document.querySelector("#nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("hamburger-active");
+      navMenu.classList.toggle("scale-0");
+      navMenu.classList.toggle("opacity-0");
+    });
+    // Tutup menu saat klik link
+    document.querySelectorAll("#nav-menu a").forEach(link =>
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("hamburger-active");
+        navMenu.classList.add("scale-0", "opacity-0");
+      })
+    );
+  </script>
+</body>
+</html>
